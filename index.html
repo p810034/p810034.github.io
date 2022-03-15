@@ -14,7 +14,6 @@
 <meta property="og:description" content="目前還在測試中">
 <meta property="og:locale" content="zh_TW">
 <meta property="article:author" content="沈政龍">
-<meta property="article:tag" content="github架站">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternate" href="/atom.xml" title="JhengLong的部落格" type="application/atom+xml">
@@ -49,7 +48,7 @@
       </h1>
       
         <h2 id="subtitle-wrap">
-          <a href="/" id="subtitle">一個抒發本人心情的地方</a>
+          <a href="/" id="subtitle">記錄東西的地方</a>
         </h2>
       
     </div>
@@ -77,6 +76,54 @@
 
       <div class="outer">
         <section id="main">
+  
+    <article id="post-build-blog" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/03/15/build-blog/" class="article-date">
+  <time class="dt-published" datetime="2022-03-15T07:50:33.000Z" itemprop="datePublished">2022-03-15</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2022/03/15/build-blog/">github靜態架站紀錄</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <ol>
+<li><p>建立 Github Pages<br> 1.1 建立一個新的repository<br> 1.2 專案名稱為 username.github.io<br> 1.3 進入專案，到 Settings 頁面<br> 1.4 GitHub Pages，Choose a theme<br> 1.5 <a target="_blank" rel="noopener" href="https://username.github.io/">https://username.github.io/</a></p>
+</li>
+<li><p>建立Hexo環境<br> 2.1 先安裝Node.js、Git<br> 2.2 終端機安裝hexo<br> 2.2.1 npm install hexo-cli -g<br> 2.3 初始化 Hexo 部落格<br> 2.3.1 hexo init name &#x2F;&#x2F;name的名稱自己取<br> 2.3.2 cd name<br> 2.3.3 npm install<br> 2.3.4 npm install hexo-deployer-git –save<br> 2.4 設定部落格<br> 2.4.1 編輯_config.yml<br>     (1)title: 標題 #部落格標題<br>     (2)subtitle: 副標題  #副標題<br>     (3)description:  #網站描述<br>     (4)keywords:  #網站關鍵字(以逗號隔開)，方便 SEO<br>     (5)author: 張三  #作者<br>     (6)language: zh-TW  #語言<br>     (7)timezone:  #使用系統時間留空<br>     (8)url: <a target="_blank" rel="noopener" href="https://username.github.io/">https://username.github.io/</a> #自己的url<br> 2.5 設定部屬<br> 2.5.1 編輯_config.yml<br>     (1)deploy:<br>          type: git<br>          repo: <a target="_blank" rel="noopener" href="https://github.com/username/username.github.io.git">https://github.com/username/username.github.io.git</a><br>          branch: main #看你的branch是哪個</p>
+</li>
+<li><p>部屬到Github<br> 3.1 終端機輸入<br> 3.1.1 git config –global user.email “<a href="mailto:&#121;&#111;&#x75;&#x40;&#x65;&#120;&#x61;&#109;&#x70;&#108;&#x65;&#x2e;&#x63;&#x6f;&#109;">&#121;&#111;&#x75;&#x40;&#x65;&#120;&#x61;&#109;&#x70;&#108;&#x65;&#x2e;&#x63;&#x6f;&#109;</a>“ &#x2F;&#x2F;設定git user信箱，只有初次需要<br> 3.1.2 git config –global user.name “Your Name” &#x2F;&#x2F;設定git user name，只有初次需要<br> 3.1.3 hexo cl  &#x2F;&#x2F;清除靜態檔案<br> 3.1.4 hexo g   &#x2F;&#x2F;產生靜態檔案<br> 3.1.5 hexo d   &#x2F;&#x2F;部署至 Github Pages</p>
+</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://p810034.github.io/2022/03/15/build-blog/" data-id="cl0rvl6x800018wb2f6sefjxz" data-title="github靜態架站紀錄" class="article-share-link">Share</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo%E3%80%81github/" rel="tag">hexo、github</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
   
     <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
@@ -117,7 +164,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://p810034.github.io/2022/03/15/hello-world/" data-id="cl0rthq640000lcb26c3t60ol" data-title="Hello World" class="article-share-link">Share</a>
+      <a data-url="https://p810034.github.io/2022/03/15/hello-world/" data-id="cl0rvl6x400008wb21rrf84ta" data-title="Hello World" class="article-share-link">Share</a>
       
       
       
@@ -139,9 +186,23 @@
 
   
     
+  <div class="widget-wrap">
+    <h3 class="widget-title">標籤</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo%E3%80%81github/" rel="tag">hexo、github</a></li></ul>
+    </div>
+  </div>
+
 
   
     
+  <div class="widget-wrap">
+    <h3 class="widget-title">標籤雲</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/hexo%E3%80%81github/" style="font-size: 10px;">hexo、github</a>
+    </div>
+  </div>
+
   
     
   <div class="widget-wrap">
@@ -158,6 +219,10 @@
     <h3 class="widget-title">最新文章</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2022/03/15/build-blog/">github靜態架站紀錄</a>
+          </li>
         
           <li>
             <a href="/2022/03/15/hello-world/">Hello World</a>
