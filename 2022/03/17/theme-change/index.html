@@ -20,31 +20,31 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"p810034.github.io","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.10.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜尋...","empty":"我們無法找到任何有關 ${query} 的搜索結果","hits_time":"${hits} 找到 ${time} 個結果","hits":"找到 ${hits} 個結果"}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="hexo指令Usage: hexo &lt;command&gt;  Commands: clean     Remove generated files and cache. config    Get or set configurations. deploy    Deploy your website. generate  Generate static files. help">
+    <meta name="description" content="1.尋找喜歡的主題參考網站 https:&#x2F;&#x2F;hexo.io&#x2F;themes&#x2F;  2. 選擇NexT主題會進入NexT主題的Github網站  3. 下載安裝替換主體在README.md，有教學 可以透過npm下載  12$ cd hexo-site$ npm install hexo-theme-next 或是clone the entire repository  12$ cd hexo-site">
 <meta property="og:type" content="article">
-<meta property="og:title" content="hexo指令及發布新貼文">
-<meta property="og:url" content="https://p810034.github.io/2022/03/16/hexo-command/index.html">
+<meta property="og:title" content="更換Hexo主題">
+<meta property="og:url" content="https://p810034.github.io/2022/03/17/theme-change/index.html">
 <meta property="og:site_name" content="JhengLong的部落格">
-<meta property="og:description" content="hexo指令Usage: hexo &lt;command&gt;  Commands: clean     Remove generated files and cache. config    Get or set configurations. deploy    Deploy your website. generate  Generate static files. help">
+<meta property="og:description" content="1.尋找喜歡的主題參考網站 https:&#x2F;&#x2F;hexo.io&#x2F;themes&#x2F;  2. 選擇NexT主題會進入NexT主題的Github網站  3. 下載安裝替換主體在README.md，有教學 可以透過npm下載  12$ cd hexo-site$ npm install hexo-theme-next 或是clone the entire repository  12$ cd hexo-site">
 <meta property="og:locale" content="zh_TW">
-<meta property="og:image" content="https://bn1303files.storage.live.com/y4m6gFqsV66RDpWcaLnmY6aHtZrzV6llFAyZhJ5FZuVB-LOkFGY9cPhXtWXmUqIWWQuhEG33rqxHhNar18UnZnoYC9Zy5bfSsnHB1M8hBNj3fLkc4227-LbaROSrKtfCYCIjG4ySFKlRUdgGygxylu4yvcxYgTNaULXOQUuatc183RuISQo0sDUmiPvRwQQzLA1?width=980&height=508&cropmode=none">
-<meta property="og:image" content="https://bn1303files.storage.live.com/y4myQ8IwV4QmzCQPoaI7j9_fwaYnWOHHeNnQrv01S29qdoivKR9ZFEh3zfQfdAW91bkWydOxj6OLqZyB4SCRoBalEoBPE3-LdIDhyCwHLpnY1vyXI5jb9UQVLAMnBW_8z4xfdBAMZEySocKtud-NxhXhGAJ0dWA1ZAsC7iwP5Cuwyzbp_W7S7AxMWdyQpsOpvet?width=979&height=512&cropmode=none">
-<meta property="article:published_time" content="2022-03-16T06:53:39.000Z">
-<meta property="article:modified_time" content="2022-03-16T08:09:55.931Z">
+<meta property="og:image" content="https://bn1303files.storage.live.com/y4mVF2g1VNxMbUXkCoQaiuSnJnndrEtltkjwXcDxAu5iSF-J9ZTMhUBd5BeKq_GNGArQ1F1vzpha2IkOxlxo-0K72qOS7BADwkA89PH9nwAlGVar4m5HNGg7SlwlV5GRdS6iCJ__YOairDECSh0d43Q8tMVfHy1SOGgFddn46aZWB1u2b4x0I5rZ33F3Vn1MXM3?width=976&height=512&cropmode=none">
+<meta property="article:published_time" content="2022-03-17T05:29:47.000Z">
+<meta property="article:modified_time" content="2022-03-17T06:50:19.245Z">
 <meta property="article:author" content="沈政龍">
 <meta property="article:tag" content="Hexo">
+<meta property="article:tag" content="theme-next">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://bn1303files.storage.live.com/y4m6gFqsV66RDpWcaLnmY6aHtZrzV6llFAyZhJ5FZuVB-LOkFGY9cPhXtWXmUqIWWQuhEG33rqxHhNar18UnZnoYC9Zy5bfSsnHB1M8hBNj3fLkc4227-LbaROSrKtfCYCIjG4ySFKlRUdgGygxylu4yvcxYgTNaULXOQUuatc183RuISQo0sDUmiPvRwQQzLA1?width=980&height=508&cropmode=none">
+<meta name="twitter:image" content="https://bn1303files.storage.live.com/y4mVF2g1VNxMbUXkCoQaiuSnJnndrEtltkjwXcDxAu5iSF-J9ZTMhUBd5BeKq_GNGArQ1F1vzpha2IkOxlxo-0K72qOS7BADwkA89PH9nwAlGVar4m5HNGg7SlwlV5GRdS6iCJ__YOairDECSh0d43Q8tMVfHy1SOGgFddn46aZWB1u2b4x0I5rZ33F3Vn1MXM3?width=976&height=512&cropmode=none">
 
 
-<link rel="canonical" href="https://p810034.github.io/2022/03/16/hexo-command/">
+<link rel="canonical" href="https://p810034.github.io/2022/03/17/theme-change/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-TW","comments":true,"permalink":"https://p810034.github.io/2022/03/16/hexo-command/","path":"2022/03/16/hexo-command/","title":"hexo指令及發布新貼文"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-TW","comments":true,"permalink":"https://p810034.github.io/2022/03/17/theme-change/","path":"2022/03/17/theme-change/","title":"更換Hexo主題"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>hexo指令及發布新貼文 | JhengLong的部落格</title>
+<title>更換Hexo主題 | JhengLong的部落格</title>
   
 
 
@@ -113,7 +113,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#hexo%E6%8C%87%E4%BB%A4"><span class="nav-number">1.</span> <span class="nav-text">hexo指令</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%83%E8%80%83%E8%B3%87%E6%96%99"><span class="nav-number">1.1.</span> <span class="nav-text">參考資料</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%99%BC%E5%B8%83%E6%96%B0%E8%B2%BC%E6%96%87"><span class="nav-number">2.</span> <span class="nav-text">發布新貼文</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E5%B0%8B%E6%89%BE%E5%96%9C%E6%AD%A1%E7%9A%84%E4%B8%BB%E9%A1%8C"><span class="nav-number">1.</span> <span class="nav-text">1.尋找喜歡的主題</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E9%81%B8%E6%93%87NexT%E4%B8%BB%E9%A1%8C"><span class="nav-number">2.</span> <span class="nav-text">2. 選擇NexT主題</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-%E4%B8%8B%E8%BC%89%E5%AE%89%E8%A3%9D%E6%9B%BF%E6%8F%9B%E4%B8%BB%E9%AB%94"><span class="nav-number">3.</span> <span class="nav-text">3. 下載安裝替換主體</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -174,7 +174,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-TW">
-    <link itemprop="mainEntityOfPage" href="https://p810034.github.io/2022/03/16/hexo-command/">
+    <link itemprop="mainEntityOfPage" href="https://p810034.github.io/2022/03/17/theme-change/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -187,12 +187,12 @@
     </span>
     
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="hexo指令及發布新貼文 | JhengLong的部落格">
+      <meta itemprop="name" content="更換Hexo主題 | JhengLong的部落格">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          hexo指令及發布新貼文
+          更換Hexo主題
         </h1>
 
         <div class="post-meta-container">
@@ -204,7 +204,7 @@
       <span class="post-meta-item-text">發表於</span>
       
 
-      <time title="創建時間：2022-03-16 14:53:39 / 修改時間：16:09:55" itemprop="dateCreated datePublished" datetime="2022-03-16T14:53:39+08:00">2022-03-16</time>
+      <time title="創建時間：2022-03-17 13:29:47 / 修改時間：14:50:19" itemprop="dateCreated datePublished" datetime="2022-03-17T13:29:47+08:00">2022-03-17</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -226,39 +226,23 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <h2 id="hexo指令"><a href="#hexo指令" class="headerlink" title="hexo指令"></a>hexo指令</h2><pre><code>Usage: hexo &lt;command&gt;
-
-Commands:
-clean     Remove generated files and cache.
-config    Get or set configurations.
-deploy    Deploy your website.
-generate  Generate static files.
-help      Get help on a command.
-init      Create a new Hexo folder.
-list      List the information of the site
-migrate   Migrate your site from other system to Hexo.
-new       Create a new post.
-publish   Moves a draft post from _drafts to _posts folder.
-render    Render files with renderer plugins.
-server    Start the server.
-version   Display version information.
-
-Global Options:
---config  Specify config file instead of using _config.yml
---cwd     Specify the CWD
---debug   Display all verbose messages in the terminal
---draft   Display draft posts
---safe    Disable all plugins and scripts
---silent  Hide output on console
-
-For more help, you can use &#39;hexo help [command]&#39; for the detailed information
-or you can check the docs: http://hexo.io/docs/
+        <h2 id="1-尋找喜歡的主題"><a href="#1-尋找喜歡的主題" class="headerlink" title="1.尋找喜歡的主題"></a>1.尋找喜歡的主題</h2><pre><code>參考網站
+https://hexo.io/themes/
 </code></pre>
-<h3 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h3><p><img src="https://bn1303files.storage.live.com/y4m6gFqsV66RDpWcaLnmY6aHtZrzV6llFAyZhJ5FZuVB-LOkFGY9cPhXtWXmUqIWWQuhEG33rqxHhNar18UnZnoYC9Zy5bfSsnHB1M8hBNj3fLkc4227-LbaROSrKtfCYCIjG4ySFKlRUdgGygxylu4yvcxYgTNaULXOQUuatc183RuISQo0sDUmiPvRwQQzLA1?width=980&height=508&cropmode=none"></p>
-<h2 id="發布新貼文"><a href="#發布新貼文" class="headerlink" title="發布新貼文"></a>發布新貼文</h2><pre><code>透過 hexo new &#39;新文章&#39;
-參考操作過程圖片
+<h2 id="2-選擇NexT主題"><a href="#2-選擇NexT主題" class="headerlink" title="2. 選擇NexT主題"></a>2. 選擇NexT主題</h2><pre><code>會進入NexT主題的Github網站
 </code></pre>
-<p><img src="https://bn1303files.storage.live.com/y4myQ8IwV4QmzCQPoaI7j9_fwaYnWOHHeNnQrv01S29qdoivKR9ZFEh3zfQfdAW91bkWydOxj6OLqZyB4SCRoBalEoBPE3-LdIDhyCwHLpnY1vyXI5jb9UQVLAMnBW_8z4xfdBAMZEySocKtud-NxhXhGAJ0dWA1ZAsC7iwP5Cuwyzbp_W7S7AxMWdyQpsOpvet?width=979&height=512&cropmode=none"></p>
+<h2 id="3-下載安裝替換主體"><a href="#3-下載安裝替換主體" class="headerlink" title="3. 下載安裝替換主體"></a>3. 下載安裝替換主體</h2><pre><code>在README.md，有教學
+可以透過npm下載
+</code></pre>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ cd hexo-site</span><br><span class="line">$ npm install hexo-theme-next</span><br></pre></td></tr></table></figure>
+<pre><code>或是clone the entire repository
+</code></pre>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ cd hexo-site</span><br><span class="line">$ git clone https://github.com/next-theme/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure>
+<pre><code>安裝完成後，打開Hexo設定檔
+並設定theme變數為next
+</code></pre>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">theme: next</span><br></pre></td></tr></table></figure>
+<p>完成後，執行 Hexo 指令時畫面會改變<br><img src="https://bn1303files.storage.live.com/y4mVF2g1VNxMbUXkCoQaiuSnJnndrEtltkjwXcDxAu5iSF-J9ZTMhUBd5BeKq_GNGArQ1F1vzpha2IkOxlxo-0K72qOS7BADwkA89PH9nwAlGVar4m5HNGg7SlwlV5GRdS6iCJ__YOairDECSh0d43Q8tMVfHy1SOGgFddn46aZWB1u2b4x0I5rZ33F3Vn1MXM3?width=976&height=512&cropmode=none"></p>
 
     </div>
 
@@ -269,20 +253,18 @@ or you can check the docs: http://hexo.io/docs/
     <footer class="post-footer">
           <div class="post-tags">
               <a href="/tags/Hexo/" rel="tag"># Hexo</a>
+              <a href="/tags/theme-next/" rel="tag"># theme-next</a>
           </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/2022/03/15/build-blog/" rel="prev" title="Github靜態架站紀錄">
-                  <i class="fa fa-chevron-left"></i> Github靜態架站紀錄
+                <a href="/2022/03/17/photo-upload/" rel="prev" title="Hexo引入外部圖片">
+                  <i class="fa fa-chevron-left"></i> Hexo引入外部圖片
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2022/03/17/photo-upload/" rel="next" title="Hexo引入外部圖片">
-                  Hexo引入外部圖片 <i class="fa fa-chevron-right"></i>
-                </a>
             </div>
           </div>
     </footer>
