@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Scanner</title>
+    <script src="html5-qrcode.min.js"></script>
+    <script src="JsBarcode.all.min.js"></script>
+</head>
+<body>
+
+<h2>Barcode Scanner</h2>
+
+<div id="reader"></div>
+
+<form method="post" action="http://ftcasp.ftc.com.tw/asp/TRAINING/146113/asp/BarcodeScannerApp/barcode.asp">
+    <input type="hidden" name="barcodeInfo" id="barcodeInfo" value="">
+    <input type="submit" name="btnComplete" value="完成">
+</form>
+
+<script>
+    // Declare a variable to track whether the scanner is initialized
+    var isScannerInitialized = false;
+
+    // Create a barcode scanner
+    var html5BarcodeScanner = new Html5QrcodeScanner(
+        "reader", 
+        { 
+            fps: 10, 
+            qrbox: 250, 
+            formats: ['QR_CODE', 'CODE_128', 'CODE_39']
+        }
+    );
+
+    // Listen for the scan event
+    html5BarcodeScanner.render(onScanSuccess);
+
+    // Handling function when a scan is successful
+    function onScanSuccess(barcodeMessage) {
+        // Fill in the barcode information into the hidden field
+        document.getElementById("barcodeInfo").value = barcodeMessage;
+
+        // Stop scanning
+        if (isScannerInitialized) {
+            html5BarcodeScanner.stop();
+        }
+    }
+
+    // Set the scanner initialization flag
+    html5BarcodeScanner.getStatus().then(function(status) {
+        if (status === "OK") {
+            isScannerInitialized = true;
+        }
+    });
+</script>
+
+</body>
+</html>
